@@ -115,8 +115,9 @@ Generation 5:  This is a cat sitting on the ground, which is covered with a mat.
 nanoVLM now supports evaluation using the comprehensive [lmms-eval](https://github.com/EvolvingLMMs-Lab/lmms-eval) toolkit:
 
 ```bash
-# Install lmms-eval (has to be from source)
-uv pip install git+https://github.com/EvolvingLMMs-Lab/lmms-eval.git
+# Install lmms-eval from the published release.
+# The Git source currently hits an upstream packaging error with recent setuptools.
+uv pip install "lmms-eval==0.7.1"
 
 # Make sure you have your environment variables set correctly and you are logged in to HF
 export HF_HOME="<Path to HF cache>"
